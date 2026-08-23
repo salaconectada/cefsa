@@ -2,3 +2,12 @@
 @plugin "daisyui" {
    themes: light;
 };
+
+@theme {
+  /* Paleta extraída directamente del isotipo de CEFSA */
+  --color-navy: #002060;
+  --color-navy-dark: #00143f;
+  --color-navy-light: #12419c;
+  --color-green: #a6da8f;
+  --color-green-dark: #3f7a2f;
+}

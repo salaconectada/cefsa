@@ -1,5 +1,5 @@
 ---
-import Base from "../../layouts/Base.astro";
+import Layout from "../../layouts/Layout.astro";
 import { blogPosts } from "../../data/blogData.js";
 import BlogCard from "../../components/blog/BlogCard.astro";
 import Breadcrumbs from "../../components/blog/Breadcrumbs.astro";
@@ -16,7 +16,10 @@ const end = start + postsPerPage;
 const currentPosts = blogPosts.slice(start, end);
 ---
 
-<Base title="Blog" meta_title="Artículos legales | Legal Staff">
+<Layout
+  title="Blog"
+  description="Artículos sobre seguridad aeroportuaria, normativa DGAC, AVSEC, operación de Rayos-X y CCTV, escritos por el equipo de CEFSA."
+>
   <section class="px-6 py-20 max-w-7xl mx-auto">
     <Breadcrumbs
       items={[
@@ -25,8 +28,8 @@ const currentPosts = blogPosts.slice(start, end);
       ]}
     />
 
-    <h1 class="text-center text-[#2F855A] text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
-      Blog 
+    <h1 class="text-center text-navy text-3xl md:text-4xl font-extrabold uppercase tracking-[3px] mb-12">
+      Blog
     </h1>
 
     <div class="grid gap-10 md:grid-cols-2 lg:grid-cols-3">
@@ -37,4 +40,4 @@ const currentPosts = blogPosts.slice(start, end);
 
     <Pagination currentPage={currentPage} totalPages={totalPages} baseUrl="/blog" />
   </section>
-</Base>
+</Layout>

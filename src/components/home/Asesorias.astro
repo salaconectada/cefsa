@@ -1,0 +1,52 @@
+---
+import asesoriaImg from "../../assets/img/asesorias-corredor.jpg";
+
+const servicios = [
+  "Diagnóstico de brechas de capacitación en seguridad aeroportuaria",
+  "Diseño de programas de formación a medida para tu empresa",
+  "Acompañamiento en el cumplimiento normativo DGAC",
+  "Gestión de la capacitación de personal en distintas categorías de acceso",
+];
+---
+
+<section id="asesorias" class="py-20 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row-reverse items-center gap-12">
+    <div class="w-full md:w-1/2">
+      <img
+        src={asesoriaImg.src}
+        alt="Pasajeros y personal circulando por un terminal aeroportuario"
+        class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md"
+      />
+    </div>
+
+    <div class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left">
+      <span class="text-green-dark font-bold text-xs uppercase tracking-widest">Asesorías</span>
+      <h2 class="text-navy text-2xl md:text-3xl font-extrabold mt-2 mb-4">
+        Capacitación a medida para tu empresa
+      </h2>
+      <p class="text-gray-600 text-base md:text-lg leading-7 mb-6">
+        Cada empresa del rubro aeroportuario tiene necesidades distintas. Nuestro equipo
+        asesora a aerolíneas, empresas de handling, seguridad privada y concesionarios en el
+        diseño de un plan de capacitación alineado a su operación y a la normativa vigente.
+      </p>
+
+      <ul class="w-full flex flex-col gap-3 mb-8 text-left">
+        {
+          servicios.map((servicio) => (
+            <li class="flex items-start gap-3 text-gray-700">
+              <span class="mt-1 flex items-center justify-center w-5 h-5 rounded-full bg-navy text-white shrink-0 text-[10px] font-bold">✓</span>
+              <span class="font-medium">{servicio}</span>
+            </li>
+          ))
+        }
+      </ul>
+
+      <a
+        href="/contacto"
+        class="px-6 py-3 bg-green hover:bg-green-dark text-navy font-bold rounded-3xl transition"
+      >
+        Solicitar asesoría
+      </a>
+    </div>
+  </div>
+</section>

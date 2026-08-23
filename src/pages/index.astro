@@ -3,14 +3,27 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/home/header.astro';
 import Empresas from '../components/home/Empresas.astro';
 import AboutHome from '../components/home/AboutHome.astro';
+import Capacitaciones from '../components/home/Capacitaciones.astro';
+import Asesorias from '../components/home/Asesorias.astro';
 import MisionVision from '../components/home/MisionVision.astro';
+import Equipo from '../components/home/Equipo.astro';
+import Testimonios from '../components/home/Testimonios.astro';
 import FAQ from '../components/home/FAQ.astro';
+import CTAFinal from '../components/home/CTAFinal.astro';
 ---
 
-<Layout>
+<Layout
+  title="Formación en Seguridad Aeroportuaria"
+  description="CEFSA es el Centro de Formación en Seguridad Aeroportuaria de Chile: cursos AVSEC, operación de Rayos-X, CCTV y asesorías para empresas, conforme a la normativa DGAC."
+>
     <Header />
     <Empresas />
     <AboutHome />
+    <Capacitaciones />
+    <Asesorias />
     <MisionVision />
+    <Equipo />
+    <Testimonios />
     <FAQ />
+    <CTAFinal />
 </Layout>

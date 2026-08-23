@@ -1,21 +1,92 @@
 ---
 import "../styles/global.css";
-import Navbar from '../components/common/navbar.astro'
-import Footer from '../components/common/footer.astro'
+import Navbar from "../components/common/navbar.astro";
+import Footer from "../components/common/footer.astro";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  noindex?: boolean;
+  type?: "website" | "article";
+}
+
+const {
+  title,
+  description = "CEFSA es el Centro de Formación en Seguridad Aeroportuaria de Chile. Capacitación AVSEC, operación de Rayos-X, CCTV y asesorías para empresas del sector aeroportuario, conforme a la normativa DGAC.",
+  image = "/og-image.jpg",
+  noindex = false,
+  type = "website",
+} = Astro.props;
+
+const siteName = "CEFSA | Centro de Formación en Seguridad Aeroportuaria";
+const pageTitle = title ? `${title} | CEFSA` : siteName;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const imageURL = new URL(image, Astro.site);
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  name: "CEFSA - Centro de Formación en Seguridad Aeroportuaria",
+  alternateName: "CEFSA",
+  url: "https://cefsa.cl",
+  logo: "https://cefsa.cl/logo-icon.png",
+  description:
+    "Centro de formación especializado en seguridad aeroportuaria (AVSEC), operación de equipos de Rayos-X, CCTV y asesorías para empresas del rubro aeroportuario en Chile, conforme a la normativa de la DGAC.",
+  areaServed: "CL",
+  email: "contacto@cefsa.cl",
+  telephone: "+56999572856",
+  sameAs: ["https://aulavirtual.cefsa.cl/"],
+};
 ---
 
 <!doctype html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Obras Sociales</title>
-	</head>
-	<body>
-		<Navbar />
-		<slot />
-		<Footer />
-	</body>
+<html lang="es-CL">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{pageTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Open Graph -->
+    <meta property="og:type" content={type} />
+    <meta property="og:site_name" content="CEFSA" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={imageURL} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:locale" content="es_CL" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={imageURL} />
+
+    <meta name="theme-color" content="#002060" />
+
+    <script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />
+  </head>
+  <body class="font-sans text-gray-800 bg-white">
+    <Navbar />
+    <slot />
+    <Footer />
+
+    <a
+      href="https://wa.me/56999572856"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Escríbenos por WhatsApp"
+      class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:scale-105 transition"
+    >
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="currentColor" class="w-8 h-8">
+        <path d="M16.004 3C9.377 3 4 8.373 4 15c0 2.36.688 4.56 1.875 6.406L4 29l7.78-1.828A11.94 11.94 0 0 0 16.004 27C22.63 27 28 21.627 28 15S22.63 3 16.004 3Zm0 21.75a9.7 9.7 0 0 1-4.95-1.36l-.355-.21-4.62 1.086 1.11-4.5-.232-.366A9.71 9.71 0 0 1 5.25 15c0-5.937 4.816-10.75 10.754-10.75S26.75 9.063 26.75 15 21.938 24.75 16.004 24.75Zm5.55-7.34c-.303-.152-1.797-.887-2.076-.988-.278-.102-.48-.152-.683.152-.202.303-.784.987-.961 1.19-.177.202-.354.227-.657.076-.303-.152-1.28-.472-2.438-1.505-.902-.804-1.51-1.797-1.688-2.1-.177-.303-.019-.467.133-.618.137-.136.303-.354.455-.53.152-.178.202-.304.303-.507.101-.202.05-.38-.025-.531-.076-.152-.683-1.646-.936-2.253-.247-.594-.498-.514-.683-.524l-.582-.01a1.12 1.12 0 0 0-.81.38c-.278.303-1.06 1.036-1.06 2.528s1.086 2.933 1.238 3.136c.152.202 2.138 3.264 5.182 4.577.724.313 1.289.5 1.729.64.727.231 1.388.198 1.911.12.583-.087 1.797-.735 2.051-1.445.253-.71.253-1.318.177-1.445-.076-.126-.278-.202-.582-.354Z"/>
+      </svg>
+    </a>
+  </body>
 </html>

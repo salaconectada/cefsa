@@ -17,7 +17,7 @@ const pages = Array.from({ length: totalPages }, (_, i) => i + 1);
           href={`${baseUrl}?page=${page}`}
           class={`join-item font-bold p-2 px-4 rounded ${
             page === currentPage
-              ? "bg-[#2F855A] text-white hover:bg-[#16683f]"
+              ? "bg-navy text-white hover:bg-navy-dark"
               : "bg-white border border-gray-300 text-gray-700 hover:bg-gray-100"
           }`}
           aria-label={`Page ${page}`}

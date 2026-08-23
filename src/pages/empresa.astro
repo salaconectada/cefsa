@@ -1,0 +1,50 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/blog/Breadcrumbs.astro";
+import MisionVision from "../components/home/MisionVision.astro";
+import Equipo from "../components/home/Equipo.astro";
+import Empresas from "../components/home/Empresas.astro";
+import empresaImg from "../assets/img/empresa-hangar.jpg";
+---
+
+<Layout
+  title="Empresa"
+  description="Conoce CEFSA, el Centro de Formación en Seguridad Aeroportuaria de Chile: nuestra misión, visión, valores y el equipo detrás de la formación de profesionales AVSEC."
+>
+  <section class="px-6 pt-16 pb-8 max-w-7xl mx-auto">
+    <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Empresa" }]} />
+
+    <img src="/logo-full.png" alt="CEFSA - Centro de Formación de Seguridad Aeroportuaria" class="h-24 md:h-28 w-auto mb-10" />
+
+    <div class="flex flex-col md:flex-row items-center gap-12">
+      <div class="w-full md:w-1/2">
+        <span class="text-green-dark font-bold text-xs uppercase tracking-widest">Quiénes somos</span>
+        <h1 class="text-navy text-3xl md:text-4xl font-extrabold mt-2 mb-6 leading-tight">
+          Centro de Formación en Seguridad Aeroportuaria
+        </h1>
+        <p class="text-gray-600 text-lg leading-7 mb-4">
+          CEFSA nace para dar respuesta a una necesidad concreta del sector aeroportuario
+          chileno: contar con personal formado y actualizado frente a las exigencias de
+          seguridad de la aviación civil.
+        </p>
+        <p class="text-gray-600 text-lg leading-7">
+          Educamos a profesionales del sector con formación de calidad, conforme a la
+          normativa de la Dirección General de Aeronáutica Civil (DGAC), a través de una
+          Aula Virtual disponible las 24 horas, bajo la coordinación de personal autorizado
+          por la autoridad aeronáutica.
+        </p>
+      </div>
+      <div class="w-full md:w-1/2">
+        <img
+          src={empresaImg.src}
+          alt="Vista frontal de una aeronave en un hangar"
+          class="w-full h-[320px] md:h-[400px] object-cover rounded-xl shadow-md"
+        />
+      </div>
+    </div>
+  </section>
+
+  <MisionVision />
+  <Equipo />
+  <Empresas />
+</Layout>

@@ -1,0 +1,58 @@
+---
+import { cursos } from "../../data/cursosData.js";
+
+const icons = {
+  shield:
+    'M12 2 4 5v6c0 5 3.5 9 8 11 4.5-2 8-6 8-11V5l-8-3Z',
+  scan: 'M4 8V4h4M20 8V4h-4M4 16v4h4M20 16v4h-4M8 8h8v8H8z',
+  camera:
+    'M4 8h3l1.5-2h7L17 8h3v10H4z M12 13a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5Z',
+  package: 'M21 8 12 3 3 8v8l9 5 9-5Zm-9 5L3 8m9 5v8m0-8 9-5',
+  users:
+    'M9 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm7-1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM3 20v-1a5 5 0 0 1 5-5h2a5 5 0 0 1 5 5v1m3-9.5A4.5 4.5 0 0 1 21.5 20H19',
+  helmet:
+    'M4 14a8 8 0 0 1 16 0v1H4v-1Zm2 1v3h12v-3M9 6.5A3 3 0 0 1 12 4h0a3 3 0 0 1 3 2.5',
+};
+---
+
+<section id="capacitaciones" class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+    <div class="text-center max-w-2xl mx-auto mb-14">
+      <span class="text-green-dark font-bold text-xs uppercase tracking-widest">Capacitaciones</span>
+      <h2 class="text-navy text-3xl md:text-4xl font-extrabold mt-2 mb-4">
+        Programas de formación en seguridad aeroportuaria
+      </h2>
+      <p class="text-gray-600">
+        Cursos dictados a través de nuestra Aula Virtual, organizados por área de
+        especialización.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {
+        cursos.map((curso) => (
+          <div class="group bg-gray-50 border border-gray-100 rounded-2xl p-8 hover:shadow-lg hover:border-green/50 transition">
+            <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-navy text-green mb-6 group-hover:bg-green group-hover:text-navy transition">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7">
+                <path d={icons[curso.icono]} />
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-navy mb-2">{curso.titulo}</h3>
+            <p class="text-gray-600 text-sm leading-relaxed">{curso.descripcion}</p>
+          </div>
+        ))
+      }
+    </div>
+
+    <div class="text-center mt-14">
+      <a
+        href="https://aulavirtual.cefsa.cl/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-block px-8 py-3 bg-navy hover:bg-navy-dark text-white font-semibold rounded-3xl transition"
+      >
+        Ver oferta completa en el Aula Virtual
+      </a>
+    </div>
+  </div>
+</section>

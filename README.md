@@ -1,26 +1,39 @@
-# Social Health - Website
+# CEFSA — Centro de Formación en Seguridad Aeroportuaria
 
-Modern and accessible website developed with Astro and Tailwind CSS, designed to showcase the services, benefits, and health programs of a health insurance provider.
-
----
-
-
-## 🚀 Features
-
-- Clean, professional, and responsive design.
-- Blog section with articles about health and prevention.
-- Built with Astro, TailwindCSS, and DaisyUI.
+Sitio web corporativo de CEFSA, desarrollado con Astro y Tailwind CSS. Presenta a la
+empresa, sus capacitaciones (AVSEC, Rayos-X, CCTV, carga aérea, gestión de personas),
+servicios de asesoría para empresas y un blog, además de enlazar con el Aula Virtual
+(aulavirtual.cefsa.cl).
 
 ---
 
-## 🧩 Technologies Used
+## 🚀 Características
+
+- Diseño corporativo, responsivo y orientado a SEO (metadatos, Open Graph, JSON-LD,
+  sitemap, `robots.txt` y `llms.txt`).
+- Secciones: Empresa, Capacitaciones, Asesorías, Equipo, Testimonios, FAQ y Blog.
+- Construido con Astro, TailwindCSS y DaisyUI.
+
+---
+
+## 🧩 Tecnologías
 
 - [Astro](https://astro.build/)
-- [Tailwind CSS](https://tailwindcss.com/) 
-- [DaisyUI](https://daisyui.com/) 
-- [JavaScript / JSON] 
+- [Tailwind CSS](https://tailwindcss.com/)
+- [DaisyUI](https://daisyui.com/)
+- [@astrojs/sitemap](https://docs.astro.build/en/guides/integrations-guide/sitemap/)
 
 ---
 
-![2](https://github.com/user-attachments/assets/7e0b6409-1746-44da-82e1-a699c7b277af)
+## Desarrollo
 
+```bash
+npm install
+npm run dev
+```
+
+## Build
+
+```bash
+npm run build
+```

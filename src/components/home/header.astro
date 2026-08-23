@@ -1,27 +1,41 @@
 ---
-import headerImg from "../../assets/img/careHeader.jpg";
+import heroImg from "../../assets/img/hero-seguridad.jpg";
 ---
 
 <header
-  class="relative h-screen bg-cover bg-center"
-  style={{ backgroundImage: `url(${headerImg.src})` }}
+  class="relative min-h-[92vh] flex items-center bg-cover bg-center"
+  style={{ backgroundImage: `url(${heroImg.src})` }}
 >
-  <div class="absolute inset-0 bg-black/80"></div>
-  <main
-    class="relative z-10 flex flex-col items-center justify-center h-full text-center px-4"
-  >
-    <h1 class="text-4xl md:text-6xl font-bold text-green-700 mb-6">
-      Reliable Health Coverage
-    </h1>
-    <p class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-bold">
-      We provide guidance and solutions for health plans, taking care of your
-      health and well-being.
-    </p>
-    <a
-      href="/contact"
-      class="px-6 py-3 bg-[#2F855A] hover:bg-green-800 text-white font-semibold rounded-3xl transition"
+  <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/85 to-navy/60"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-6 py-32 w-full">
+    <span
+      class="inline-block bg-green text-navy font-bold text-xs uppercase tracking-widest px-4 py-2 rounded-full mb-6"
     >
-      Contact Us
-    </a>
-  </main>
+      Formación conforme a normativa DGAC
+    </span>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white mb-6 max-w-3xl leading-tight">
+      Formando Profesionales en Seguridad Aeroportuaria
+    </h1>
+    <p class="text-lg md:text-xl text-white/85 mb-10 max-w-2xl font-medium">
+      Capacitación, concientización AVSEC y asesoría especializada para las personas y
+      empresas que sostienen la seguridad de los aeropuertos de Chile.
+    </p>
+    <div class="flex flex-wrap gap-4">
+      <a
+        href="/capacitaciones"
+        class="px-8 py-3 bg-green hover:bg-green-dark text-navy font-bold rounded-3xl transition"
+      >
+        Ver Capacitaciones
+      </a>
+      <a
+        href="https://aulavirtual.cefsa.cl/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-8 py-3 border-2 border-white text-white hover:bg-white hover:text-navy font-bold rounded-3xl transition"
+      >
+        Aula Virtual
+      </a>
+    </div>
+  </div>
 </header>

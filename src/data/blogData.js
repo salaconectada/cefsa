@@ -1,134 +1,122 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "The Importance of Good Health Coverage",
+    title: "Concientización AVSEC: qué es y por qué es obligatoria en el sector aeroportuario",
     description:
-      "Having solid health insurance is key to taking care of your health and your family's.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
-    slug: "importance-of-health-coverage",
-    date: "Oct 23, 2025",
-    author: "SaludPlus Team",
+      "Todo el personal que opera dentro de la Zona de Seguridad Restringida debe acreditar concientización AVSEC. Te explicamos en qué consiste y por qué es un requisito, no una opción.",
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1000&auto=format&fit=crop",
+    slug: "concientizacion-avsec-por-que-es-obligatoria",
+    date: "15 ago 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Health cannot be left to chance. Having adequate health coverage ensures quality care when it is needed most.</p>
-      <p>An efficient health plan not only covers emergencies but also promotes prevention, regular check-ups, and comprehensive support for each member.</p>
-      <p>At <strong>SaludPlus</strong>, we work so that everyone can access the care they deserve, with a reliable professional network and transparent management.</p>
-    `
+      <p>La concientización en seguridad aeroportuaria (AVSEC) es el conjunto de conocimientos mínimos que debe tener toda persona que accede a áreas restringidas de un aeropuerto, sin importar si su labor es operativa, administrativa o comercial.</p>
+      <p>Su objetivo es simple: que cada persona entienda las amenazas propias del entorno aeroportuario, reconozca comportamientos y objetos sospechosos, y sepa cómo actuar frente a un incidente de seguridad.</p>
+      <p>En CEFSA dictamos programas de concientización AVSEC para las distintas categorías de acceso, conforme a la normativa de la Dirección General de Aeronáutica Civil (DGAC), a través de nuestra Aula Virtual.</p>
+    `,
   },
   {
     id: 2,
-    title: "Annual Medical Checkups: Why They Are Essential",
+    title: "Operación de equipos de Rayos-X: la primera línea de la inspección aeroportuaria",
     description:
-      "Preventive check-ups help detect illnesses early and improve quality of life.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
-    slug: "annual-checkups",
-    date: "Oct 10, 2025",
-    author: "Dr. Laura Fernández",
+      "Quienes operan equipos de rayos X en puntos de control cumplen un rol crítico. Revisamos qué habilidades exige este trabajo y cómo se forma un operador competente.",
+    image: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=1000&auto=format&fit=crop",
+    slug: "operacion-equipos-rayos-x-aeropuerto",
+    date: "2 ago 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Prevention is the first step toward a healthy life. Annual medical check-ups help detect potential problems before they become serious.</p>
-      <p>These check-ups include basic exams, clinical tests, and specific evaluations based on the patient’s age and medical history.</p>
-      <p>Performing them regularly reduces risks and allows for comprehensive long-term health monitoring.</p>
-    `
+      <p>Detrás de cada pantalla de un equipo de rayos X hay una persona formada para interpretar imágenes en segundos y tomar decisiones que afectan directamente la seguridad de un vuelo.</p>
+      <p>Operar este tipo de equipos exige atención sostenida, conocimiento de materiales y objetos prohibidos, y manejo de los procedimientos de resolución de alarmas establecidos por la autoridad aeronáutica.</p>
+      <p>Nuestro curso de Operación de Equipos de Rayos-X entrega las bases técnicas y prácticas para desempeñarse en un punto de control de seguridad aeroportuaria.</p>
+    `,
   },
   {
     id: 3,
-    title: "Mental Health: A Fundamental Pillar of Well-being",
+    title: "CCTV y videovigilancia: el rol de la tecnología en la seguridad aeroportuaria",
     description:
-      "Caring for your mind is as important as caring for your body. Learn how to access the right support.",
-    image: "https://images.unsplash.com/photo-1550831107-1553da8c8464?q=80&w=800",
-    slug: "mental-health",
-    date: "Oct 2, 2025",
-    author: "SaludPlus Team",
+      "Los sistemas de circuito cerrado de televisión son hoy una herramienta central de la seguridad aeroportuaria. Conoce qué competencias necesita quien los opera.",
+    image: "https://images.unsplash.com/photo-1580795479225-c50ab8c3348d?q=80&w=1000&auto=format&fit=crop",
+    slug: "cctv-videovigilancia-seguridad-aeroportuaria",
+    date: "20 jul 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Emotional well-being directly affects physical health. Stress, anxiety, or exhaustion can impact work performance and daily life.</p>
-      <p>That's why mental health programs, including psychological care, workshops, and therapeutic support, are essential in any modern health plan.</p>
-      <p>Talking about mental health means talking about holistic well-being.</p>
-    `
+      <p>Un sistema de videovigilancia bien operado permite anticipar incidentes, apoyar investigaciones y reforzar el control de acceso a zonas restringidas dentro del aeropuerto.</p>
+      <p>Sin embargo, la tecnología por sí sola no basta: se requiere personal capacitado para monitorear, priorizar alertas y coordinar la respuesta junto a los equipos de seguridad en terreno.</p>
+      <p>Nuestro curso de CCTV entrega herramientas prácticas para la operación de estos sistemas en el contexto específico de un aeropuerto.</p>
+    `,
   },
   {
     id: 4,
-    title: "Family Coverage: Supporting Every Stage of Life",
+    title: "Seguridad de la carga y el correo aéreo: por qué toda la cadena importa",
     description:
-      "From childhood to adulthood, a good health plan grows with its members.",
-    image: "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=800",
-    slug: "family-coverage",
-    date: "Sep 30, 2025",
-    author: "Lic. Marcos Rivas",
+      "La seguridad de un vuelo no depende solo de los pasajeros. Repasamos por qué la inspección de la carga y el correo aéreo es igual de crítica.",
+    image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1000&auto=format&fit=crop",
+    slug: "seguridad-carga-correo-aereo",
+    date: "5 jul 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Every stage of life has its own medical needs. Family coverage ensures pediatric care, pregnancy check-ups, dental health, chronic treatments, and more.</p>
-      <p>A solid health plan supports its members at every moment, providing security and peace of mind for the whole family.</p>
-    `
+      <p>Cada envío que sube a un avión pasa por una cadena de responsabilidades: quien lo despacha, quien lo transporta, quien lo inspecciona y quien finalmente lo carga en la aeronave.</p>
+      <p>Un eslabón débil en esa cadena puede comprometer la seguridad de todo el vuelo. Por eso las empresas de carga y correo aéreo deben contar con personal formado en procedimientos de inspección y control.</p>
+      <p>En CEFSA capacitamos a este personal para que la cadena de suministro se mantenga segura de principio a fin.</p>
+    `,
   },
   {
     id: 5,
-    title: "Prevention Programs: Caring Before Curing",
+    title: "Capacitación 100% online: las ventajas de estudiar en un Aula Virtual",
     description:
-      "Prevention is the most effective tool for maintaining long-term health.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
-    slug: "prevention-programs",
-    date: "Sep 25, 2025",
-    author: "SaludPlus Team",
+      "Compaginar el trabajo con la formación profesional es posible. Te contamos cómo funciona nuestra Aula Virtual y qué ventajas tiene estudiar a tu propio ritmo.",
+    image: "https://images.unsplash.com/photo-1554415707-6e8cfc93fe23?q=80&w=1000&auto=format&fit=crop",
+    slug: "capacitacion-online-ventajas-moodle",
+    date: "18 jun 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Prevention programs allow identifying risk factors and adopting healthy habits.</p>
-      <p>From vaccination campaigns to workshops on nutrition or physical activity, these initiatives improve quality of life and reduce the need for complex treatments.</p>
-      <p>Prevention is investing in health.</p>
-    `
+      <p>Uno de los principales obstáculos para capacitarse es el tiempo. Por eso nuestra Aula Virtual está disponible las 24 horas, permitiendo avanzar en los cursos sin descuidar el trabajo ni la vida personal.</p>
+      <p>La plataforma organiza los contenidos por módulos, incorpora foros de discusión y permite comunicarse directamente con los instructores ante cualquier duda.</p>
+      <p>Así, cada alumno puede definir su propio ritmo de estudio manteniendo el mismo estándar de exigencia académica.</p>
+    `,
   },
   {
     id: 6,
-    title: "Telemedicine: Fast and Accessible Care",
+    title: "Gestión de personas: liderazgo para equipos de seguridad aeroportuaria",
     description:
-      "Online medical consultations, a key tool to bring healthcare closer to everyone.",
-    image: "https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=800",
-    slug: "telemedicine",
-    date: "Sep 20, 2025",
-    author: "Dr. Natalia Gómez",
+      "Supervisar un equipo de seguridad requiere algo más que conocimiento técnico. Hablamos del rol del liderazgo en la gestión de personas dentro del aeropuerto.",
+    image: "https://images.unsplash.com/photo-1573497491208-6b1acb260507?q=80&w=1000&auto=format&fit=crop",
+    slug: "gestion-personas-liderazgo-seguridad",
+    date: "30 may 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Telemedicine has revolutionized how we access healthcare. It allows quick and safe consultations from anywhere, without waiting or traveling.</p>
-      <p>Ideal for follow-ups, prescriptions, or minor questions, it perfectly complements in-person care.</p>
-      <p>Technology at the service of well-being.</p>
-    `
+      <p>Un buen supervisor de seguridad no solo conoce los procedimientos: también sabe comunicarlos, motivar a su equipo y sostener el estándar operacional turno tras turno.</p>
+      <p>La gestión de personas en un entorno de alta exigencia como el aeroportuario implica manejo de conflictos, retroalimentación efectiva y capacidad de tomar decisiones bajo presión.</p>
+      <p>Nuestro programa de Gestión de Personas está pensado para jefaturas y supervisores que buscan fortalecer estas competencias.</p>
+    `,
   },
   {
     id: 7,
-    title: "Healthy Eating and Disease Prevention",
+    title: "Capacitación para empresas: por qué una asesoría a medida marca la diferencia",
     description:
-      "A balanced diet is key to maintaining physical and mental health.",
-    image: "https://images.unsplash.com/photo-1605296867304-46d5465a13f1?q=80&w=800",
-    slug: "healthy-eating",
-    date: "Sep 15, 2025",
-    author: "Lic. Sofía Benítez",
+      "No todas las empresas del rubro aeroportuario tienen las mismas necesidades de capacitación. Te explicamos cómo funciona nuestro servicio de asesorías.",
+    image: "https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1000&auto=format&fit=crop",
+    slug: "capacitacion-empresas-asesoria-a-medida",
+    date: "12 may 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Eating well is not about dieting, but adopting sustainable habits. A balanced diet helps prevent cardiovascular diseases, diabetes, and other metabolic disorders.</p>
-      <p>Including fruits, vegetables, whole grains, and lean proteins boosts energy and strengthens the immune system.</p>
-      <p>Health starts on your plate.</p>
-    `
+      <p>Una aerolínea, una empresa de handling y un concesionario aeroportuario no capacitan al mismo personal, ni con la misma urgencia. Por eso una malla de cursos genérica rara vez es suficiente.</p>
+      <p>Nuestro servicio de asesorías parte por entender la operación y la dotación de cada empresa, para luego diseñar un plan de capacitación que priorice el cumplimiento normativo y las brechas reales del equipo.</p>
+      <p>Si tu empresa necesita capacitar personal en seguridad aeroportuaria, conversemos sobre tu caso específico.</p>
+    `,
   },
   {
     id: 8,
-    title: "Personalized Medical Care: The Value of Human Touch",
+    title: "Cursos con código SENCE: qué significa y cómo aprovecharlo",
     description:
-      "Empathy and close support are essential parts of good care.",
-    image: "https://images.unsplash.com/photo-1576765607924-b321a4a69a7a?q=80&w=800",
-    slug: "personalized-care",
-    date: "Sep 10, 2025",
-    author: "SaludPlus Team",
+      "Parte de nuestra oferta formativa cuenta con código SENCE. Repasamos qué implica esto para trabajadores y empresas.",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=1000&auto=format&fit=crop",
+    slug: "certificacion-sence-cursos-seguridad",
+    date: "22 abr 2025",
+    author: "Equipo CEFSA",
     content: `
-      <p>Beyond diagnoses and treatments, medical care must focus on the person. Listening, supporting, and understanding are key values for building trust.</p>
-      <p>Personalized care strengthens the bond between patients and professionals, improving clinical outcomes and the care experience.</p>
-    `
-  },
-  {
-    id: 9,
-    title: "Physical Activity: The Ideal Complement to Health",
-    description:
-      "Regular exercise helps prevent diseases and improve overall well-being.",
-    image: "https://images.unsplash.com/photo-1599058917212-d750089bc07a?q=80&w=800",
-    slug: "physical-activity",
-    date: "Sep 5, 2025",
-    author: "Dr. Ricardo Álvarez",
-    content: `
-      <p>Exercise not only strengthens the body but also improves mood and concentration. Walking, swimming, or recreational activities are simple ways to stay active.</p>
-      <p>Regular physical activity prevents chronic diseases and improves sleep quality and daily energy.</p>
-    `
+      <p>Que un curso cuente con código SENCE significa que cumple con los estándares definidos por el Servicio Nacional de Capacitación y Empleo para ser reconocido dentro del sistema de capacitación laboral en Chile.</p>
+      <p>Para las empresas, esto puede facilitar la planificación y el financiamiento de la capacitación de sus equipos; para los trabajadores, respalda la formación recibida.</p>
+      <p>Consulta con nuestro equipo qué cursos de nuestra malla cuentan con código SENCE vigente y los requisitos para acceder a ellos.</p>
+    `,
   },
 ];

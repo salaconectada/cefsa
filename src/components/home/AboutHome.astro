@@ -1,5 +1,12 @@
 ---
-import homeImg from "../../assets/img/abouthome.jpg";
+import homeImg from "../../assets/img/empresa-terminal.jpg";
+
+const razones = [
+  "Instructores con experiencia real en seguridad aeroportuaria",
+  "Programas flexibles, adaptables a tu horario",
+  "Acceso 24/7 a la Aula Virtual (Moodle)",
+  "Foros y mensajería directa con instructores",
+];
 ---
 
 <section
@@ -9,8 +16,8 @@ import homeImg from "../../assets/img/abouthome.jpg";
   <div class="w-full md:w-1/2">
     <img
       src={homeImg.src}
-      alt="Care and health for everyone"
-      class="w-full h-[300px] md:h-[350px] object-cover rounded-xl shadow-md"
+      alt="Aeronave en pista frente a terminal aeroportuario"
+      class="w-full h-[300px] md:h-[380px] object-cover rounded-xl shadow-md"
     />
   </div>
 
@@ -19,26 +26,37 @@ import homeImg from "../../assets/img/abouthome.jpg";
     class="w-full md:w-1/2 flex flex-col items-center md:items-start text-center md:text-left"
   >
     <h2
-      class="text-green-800 text-2xl md:text-3xl font-extrabold uppercase tracking-[4px] mb-4"
+      class="text-navy text-2xl md:text-3xl font-extrabold uppercase tracking-[3px] mb-4"
     >
-      Why Choose Us
+      Por qué elegir CEFSA
     </h2>
 
     <p class="text-gray-600 text-base md:text-lg leading-7 mb-6">
-      At <span class="font-bold text-green-800">ObraSalud</span>, we work so
-      that you and your family receive the best medical care, with affordable
-      plans and coverage across the country. Our mission is to provide security
-      and support at every stage of your life.
-      <br /><br />
-      Because your health is the most important, we offer close, humane, and transparent
-      care, tailored to your real needs.
+      En <span class="font-bold text-navy">CEFSA</span> educamos a profesionales del sector
+      aeroportuario con formación de calidad, conforme a la normativa de la DGAC, para que
+      se desempeñen de forma segura y competente en el ambiente aeroportuario.
     </p>
 
+    <ul class="w-full flex flex-col gap-3 mb-8">
+      {
+        razones.map((razon) => (
+          <li class="flex items-center gap-3 justify-center md:justify-start text-gray-700">
+            <span class="flex items-center justify-center w-6 h-6 rounded-full bg-green/20 text-green-dark shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z" clip-rule="evenodd" />
+              </svg>
+            </span>
+            <span class="font-medium">{razon}</span>
+          </li>
+        ))
+      }
+    </ul>
+
     <a
-      href="/about"
-      class="px-6 py-3 bg-green-800 hover:bg-green-900 text-white font-semibold rounded-3xl transition"
+      href="/empresa"
+      class="px-6 py-3 bg-navy hover:bg-navy-dark text-white font-semibold rounded-3xl transition"
     >
-      Learn More
+      Conoce más de CEFSA
     </a>
   </div>
 </section>

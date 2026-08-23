@@ -1,0 +1,64 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/blog/Breadcrumbs.astro";
+import Capacitaciones from "../components/home/Capacitaciones.astro";
+import CTAFinal from "../components/home/CTAFinal.astro";
+
+const modalidad = [
+  {
+    titulo: "100% online",
+    detalle: "Todos los cursos se dictan a través de nuestra Aula Virtual, plataforma Moodle.",
+  },
+  {
+    titulo: "Acceso 24/7",
+    detalle: "Estudia cuando puedas, sin descuidar tu trabajo ni tus otras responsabilidades.",
+  },
+  {
+    titulo: "Instructores expertos",
+    detalle: "Formadores con experiencia real en operación y seguridad aeroportuaria.",
+  },
+  {
+    titulo: "Foros y mensajería",
+    detalle: "Comunicación directa con instructores y otros alumnos durante todo el curso.",
+  },
+];
+---
+
+<Layout
+  title="Capacitaciones"
+  description="Programas de capacitación en seguridad aeroportuaria: concientización AVSEC, operación de Rayos-X, CCTV, gestión de personas y seguridad de carga aérea. 100% online, conforme a la normativa DGAC."
+>
+  <section class="px-6 pt-16 pb-4 max-w-7xl mx-auto text-center">
+    <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Capacitaciones" }]} />
+    <span class="text-green-dark font-bold text-xs uppercase tracking-widest">Capacitaciones</span>
+    <h1 class="text-navy text-3xl md:text-4xl font-extrabold mt-2 mb-4">
+      Nuestras capacitaciones en seguridad aeroportuaria
+    </h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Cursos diseñados para las distintas categorías de acceso y áreas de trabajo dentro del
+      aeropuerto, dictados en nuestra Aula Virtual.
+    </p>
+  </section>
+
+  <Capacitaciones />
+
+  <section class="py-16 bg-gray-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-navy text-2xl md:text-3xl font-extrabold text-center mb-12">
+        Cómo es estudiar en CEFSA
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          modalidad.map((item) => (
+            <div class="bg-white rounded-xl p-6 border border-gray-100 shadow-sm">
+              <h3 class="font-bold text-navy mb-2">{item.titulo}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">{item.detalle}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <CTAFinal />
+</Layout>

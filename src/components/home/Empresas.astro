@@ -1,25 +1,24 @@
 ---
-import { empresas } from "../../data/empresasData.js";
+import { sectores } from "../../data/sectoresData.js";
 ---
 
 <section class="py-16 bg-gray-50">
   <div class="max-w-6xl mx-auto text-center px-6">
-    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-10">
-      Companies that trust us
+    <h2 class="text-3xl md:text-4xl font-bold text-navy mb-3">
+      Sectores en los que capacitamos
     </h2>
+    <p class="text-gray-600 max-w-2xl mx-auto mb-10">
+      Formamos personal para empresas y organizaciones que operan dentro del ecosistema
+      aeroportuario.
+    </p>
 
     <div
-      class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-10 justify-items-center items-center"
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 justify-items-center items-stretch"
     >
       {
-        empresas.map((empresa) => (
-          <div class="flex font-bold items-center justify-center grayscale hover:grayscale-0 transition duration-300">
-            <img
-              src={empresa.logo}
-              alt={empresa.nombre}
-              class="h-14 md:h-16 object-contain rounded-4xl"
-              loading="lazy"
-            />
+        sectores.map((sector) => (
+          <div class="w-full h-full flex items-center justify-center text-center bg-white border border-gray-200 rounded-xl px-3 py-5 font-bold text-navy text-sm shadow-sm hover:shadow-md hover:border-green transition">
+            {sector.nombre}
           </div>
         ))
       }

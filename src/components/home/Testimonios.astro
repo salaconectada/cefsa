@@ -1,0 +1,28 @@
+---
+import { testimonios } from "../../data/testimoniosData.js";
+---
+
+<section class="py-20 bg-navy text-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <span class="text-green font-bold text-xs uppercase tracking-widest">Testimonios</span>
+    <h2 class="text-3xl md:text-4xl font-extrabold mt-2 mb-14">Lo que dicen nuestros alumnos</h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      {
+        testimonios.map((t) => (
+          <div class="bg-white/5 border border-white/10 rounded-2xl p-6 text-left flex flex-col">
+            <div class="flex gap-1 mb-4 text-green">
+              {Array.from({ length: t.rating }).map(() => (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+                  <path d="M10 1.5l2.6 5.6 6.1.7-4.5 4.2 1.2 6-5.4-3-5.4 3 1.2-6-4.5-4.2 6.1-.7Z" />
+                </svg>
+              ))}
+            </div>
+            <p class="text-white/85 text-sm leading-relaxed mb-5 flex-1">"{t.texto}"</p>
+            <p class="font-bold text-sm">{t.nombre}</p>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

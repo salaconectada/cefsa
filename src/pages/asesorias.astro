@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Breadcrumbs from "../components/blog/Breadcrumbs.astro";
+import Asesorias from "../components/home/Asesorias.astro";
+import Empresas from "../components/home/Empresas.astro";
+import CTAFinal from "../components/home/CTAFinal.astro";
+
+const pasos = [
+  {
+    paso: "1",
+    titulo: "Diagnóstico",
+    detalle: "Levantamos las necesidades de capacitación según la operación y dotación de tu empresa.",
+  },
+  {
+    paso: "2",
+    titulo: "Diseño del plan",
+    detalle: "Proponemos un programa de cursos priorizado por cargo y categoría de acceso.",
+  },
+  {
+    paso: "3",
+    titulo: "Implementación",
+    detalle: "Tu equipo se capacita en la Aula Virtual, con seguimiento de avance por parte de CEFSA.",
+  },
+  {
+    paso: "4",
+    titulo: "Seguimiento",
+    detalle: "Acompañamos el cumplimiento normativo y la renovación de capacitaciones vigentes.",
+  },
+];
+---
+
+<Layout
+  title="Asesorías"
+  description="Asesoría especializada para empresas del sector aeroportuario: diagnóstico de brechas, diseño de planes de capacitación a medida y acompañamiento en el cumplimiento normativo DGAC."
+>
+  <section class="px-6 pt-16 pb-4 max-w-7xl mx-auto text-center">
+    <Breadcrumbs items={[{ label: "Inicio", href: "/" }, { label: "Asesorías" }]} />
+    <span class="text-green-dark font-bold text-xs uppercase tracking-widest">Asesorías</span>
+    <h1 class="text-navy text-3xl md:text-4xl font-extrabold mt-2 mb-4">
+      Asesoría en seguridad aeroportuaria para empresas
+    </h1>
+    <p class="text-gray-600 max-w-2xl mx-auto">
+      Acompañamos a aerolíneas, empresas de handling, seguridad privada y concesionarios en
+      el diseño de un plan de capacitación alineado a su operación.
+    </p>
+  </section>
+
+  <Asesorias />
+
+  <section class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-navy text-2xl md:text-3xl font-extrabold text-center mb-12">
+        Cómo trabajamos
+      </h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        {
+          pasos.map((item) => (
+            <div class="bg-gray-50 rounded-xl p-6 border border-gray-100">
+              <span class="text-green text-3xl font-extrabold">{item.paso}</span>
+              <h3 class="font-bold text-navy mt-2 mb-2">{item.titulo}</h3>
+              <p class="text-gray-600 text-sm leading-relaxed">{item.detalle}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <Empresas />
+  <CTAFinal />
+</Layout>

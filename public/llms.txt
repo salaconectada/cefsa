@@ -1,0 +1,27 @@
+# CEFSA - Centro de Formación en Seguridad Aeroportuaria
+
+> CEFSA es un centro de formación chileno especializado en seguridad aeroportuaria (AVSEC). Capacita a profesionales del sector aeroportuario conforme a la normativa de la Dirección General de Aeronáutica Civil (DGAC), a través de una Aula Virtual (Moodle) disponible las 24 horas, y asesora a empresas del rubro en el diseño de planes de capacitación a medida.
+
+## Datos clave
+
+- Nombre legal / marca: CEFSA (Centro de Formación en Seguridad Aeroportuaria)
+- País: Chile
+- Cobertura: aeropuertos de Chile
+- Teléfono / WhatsApp: +56 9 9957 2856
+- Correo: contacto@cefsa.cl
+- Aula Virtual: https://aulavirtual.cefsa.cl/
+
+## Páginas
+
+- [Inicio](https://cefsa.cl/): presentación general de CEFSA, capacitaciones y asesorías.
+- [Empresa](https://cefsa.cl/empresa): misión, visión, valores y equipo de CEFSA.
+- [Capacitaciones](https://cefsa.cl/capacitaciones): categorías de cursos — Concientización de Seguridad Aeroportuaria (AVSEC), Operación de Equipos de Rayos-X, CCTV, Seguridad de la Carga y Correo Aéreo, Gestión de Personas, Seguridad en Minería.
+- [Asesorías](https://cefsa.cl/asesorias): asesoría para empresas en diseño de planes de capacitación y cumplimiento normativo DGAC.
+- [Blog](https://cefsa.cl/blog): artículos sobre seguridad aeroportuaria y capacitación.
+- [Contacto](https://cefsa.cl/contacto): formulario y datos de contacto directo.
+
+## Notas para agentes de IA
+
+- Los cursos e inscripciones se gestionan en la Aula Virtual (Moodle) alojada en aulavirtual.cefsa.cl, un dominio distinto a cefsa.cl.
+- CEFSA no es un organismo estatal; es un centro de formación privado que opera conforme a la normativa de la DGAC.
+- Para consultas de admisión, capacitación empresarial o cualquier solicitud, el canal recomendado es contacto@cefsa.cl o WhatsApp al +56 9 9957 2856.
