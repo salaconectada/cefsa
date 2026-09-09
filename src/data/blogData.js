@@ -1,32 +1,32 @@
 export const blogPosts = [
   {
     id: 1,
-    title: "Concientización AVSEC: qué es y por qué es obligatoria en el sector aeroportuario",
+    title: "Procedimientos de inspección: la base de un punto de control seguro",
     description:
-      "Todo el personal que opera dentro de la Zona de Seguridad Restringida debe acreditar concientización AVSEC. Te explicamos en qué consiste y por qué es un requisito, no una opción.",
+      "Un punto de control aeroportuario es tan confiable como los procedimientos que sigue quien lo opera. Revisamos por qué esta formación es clave para el personal de seguridad.",
     image: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?q=80&w=1000&auto=format&fit=crop",
-    slug: "concientizacion-avsec-por-que-es-obligatoria",
+    slug: "procedimientos-de-inspeccion-punto-de-control",
     date: "15 ago 2025",
     author: "Equipo CEFSA",
     content: `
-      <p>La concientización en seguridad aeroportuaria (AVSEC) es el conjunto de conocimientos mínimos que debe tener toda persona que accede a áreas restringidas de un aeropuerto, sin importar si su labor es operativa, administrativa o comercial.</p>
-      <p>Su objetivo es simple: que cada persona entienda las amenazas propias del entorno aeroportuario, reconozca comportamientos y objetos sospechosos, y sepa cómo actuar frente a un incidente de seguridad.</p>
-      <p>En CEFSA dictamos programas de concientización AVSEC para las distintas categorías de acceso, conforme a la normativa de la Dirección General de Aeronáutica Civil (DGAC), a través de nuestra Aula Virtual.</p>
+      <p>Cada punto de control aeroportuario depende de procedimientos claros y de personal capacitado para aplicarlos de manera consistente, turno tras turno.</p>
+      <p>Conocer los procedimientos de inspección permite identificar objetos y situaciones de riesgo, actuar con criterio ante una alarma y mantener el flujo de pasajeros sin comprometer la seguridad.</p>
+      <p>En CEFSA dictamos formación en procedimientos de inspección conforme a la normativa de la Dirección General de Aeronáutica Civil (DGAC), a través de nuestra Aula Virtual.</p>
     `,
   },
   {
     id: 2,
-    title: "Operación de equipos de Rayos-X: la primera línea de la inspección aeroportuaria",
+    title: "Seguridad en minería: exigencia operacional fuera del aeropuerto",
     description:
-      "Quienes operan equipos de rayos X en puntos de control cumplen un rol crítico. Revisamos qué habilidades exige este trabajo y cómo se forma un operador competente.",
-    image: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?q=80&w=1000&auto=format&fit=crop",
-    slug: "operacion-equipos-rayos-x-aeropuerto",
+      "La misma disciplina que exige la seguridad aeroportuaria se aplica hoy en faenas mineras. Te contamos cómo adaptamos nuestra formación a ese contexto.",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=1000&auto=format&fit=crop",
+    slug: "seguridad-en-mineria-exigencia-operacional",
     date: "2 ago 2025",
     author: "Equipo CEFSA",
     content: `
-      <p>Detrás de cada pantalla de un equipo de rayos X hay una persona formada para interpretar imágenes en segundos y tomar decisiones que afectan directamente la seguridad de un vuelo.</p>
-      <p>Operar este tipo de equipos exige atención sostenida, conocimiento de materiales y objetos prohibidos, y manejo de los procedimientos de resolución de alarmas establecidos por la autoridad aeronáutica.</p>
-      <p>Nuestro curso de Operación de Equipos de Rayos-X entrega las bases técnicas y prácticas para desempeñarse en un punto de control de seguridad aeroportuaria.</p>
+      <p>Una faena minera comparte con el aeropuerto algo esencial: un entorno de alto riesgo donde un error de procedimiento puede tener consecuencias graves.</p>
+      <p>Por eso trasladamos nuestra experiencia en seguridad operacional al rubro minero, con programas que refuerzan el cumplimiento de protocolos y la capacidad de respuesta del personal en terreno.</p>
+      <p>Nuestro curso de Seguridad en Minería se dicta con la misma exigencia académica que nuestros programas aeroportuarios.</p>
     `,
   },
   {

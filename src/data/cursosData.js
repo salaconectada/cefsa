@@ -1,15 +1,9 @@
 export const cursos = [
   {
-    icono: "shield",
-    titulo: "Concientización de Seguridad Aeroportuaria (AVSEC)",
+    icono: "inspection",
+    titulo: "Procedimientos de Inspección",
     descripcion:
-      "Programas de concientización AVSEC para las distintas categorías de acceso a la Zona de Seguridad Restringida (ZSR), conforme a la normativa DGAC.",
-  },
-  {
-    icono: "scan",
-    titulo: "Operación de Equipos de Rayos-X",
-    descripcion:
-      "Formación técnica para la operación de equipos de inspección por rayos X utilizados en los puntos de control de seguridad aeroportuaria.",
+      "Formación en procedimientos de inspección de seguridad aplicados a los puntos de control aeroportuario, conforme a la normativa DGAC.",
   },
   {
     icono: "camera",
